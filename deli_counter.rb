@@ -4,7 +4,7 @@ def line(array)
     else
       line_info=[]
       count=0
-      array.collect_with_index do |customer,number|
+      array.each_with_index do |customer,number|
       line_info << "#{number}. #{customer}"
       end
       line_info.join
