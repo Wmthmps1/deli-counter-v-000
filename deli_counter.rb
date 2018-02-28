@@ -5,7 +5,7 @@ def line(array)
       line_info=[]
       count=0
       array.each_with_index do |customer,number|
-      line_info << "#{number}. #{customer}"
+      line_info << "#{number+1}. #{customer}"
       end
       line_info.join
      puts "The line is currently: #{line_info}"
