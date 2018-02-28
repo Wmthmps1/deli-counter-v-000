@@ -4,10 +4,9 @@ def line(array)
     else
       line_info=[]
       count=0
-      array.collect do |customer|
-      line_info << "#{count+1}. #{customer}"
+      array.collect_with_index do |customer,number|
+      line_info << "#{number}. #{customer}"
       line_info.join(" ")
-      count+1
       end
      puts "The line is currently: #{line_info}"
     end
