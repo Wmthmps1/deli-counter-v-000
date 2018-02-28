@@ -6,8 +6,8 @@ def line(array)
       count=0
       array.collect_with_index do |customer,number|
       line_info << "#{number}. #{customer}"
-      line_info.join(" ")
       end
+      line_info.join
      puts "The line is currently: #{line_info}"
     end
 end
